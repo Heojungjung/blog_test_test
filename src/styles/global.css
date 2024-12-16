@@ -1,0 +1,219 @@
+@import url('https://cdn.jsdelivr.net/gh/fonts-archive/GmarketSans/GmarketSans.css');
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Gmarket Sans';
+  background-color: #f5f5f5; /* 전반적인 배경 색상 */
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+ul, ol, li{
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: 'Gmarket Sans';
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Navbar */
+
+nav{
+  background-color: #7dc1f5;
+  color: #333;
+  padding: 30px 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .logo{
+  font-weight: 700;
+}
+
+nav ul{
+  display: flex;
+  gap: 30px;
+}
+
+nav ul .navLink:hover{
+  text-decoration: underline;
+}
+
+/* content */
+.content{
+  max-width: 1000px;
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 30px;
+  margin: 0 auto;
+  overflow-y: hidden;
+  height: calc(100dvh - 131px);
+}
+
+/* content home */
+.journalLayout{
+  margin: 20px 10px;
+  padding: 1rem 2rem;
+  color: #353f4b;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.journalLayout h2{
+  margin: 20px;
+}
+
+.journalLayout p{
+  margin: 10px 0;
+}
+
+.journalLayout li{
+  line-height: 2rem;
+}
+
+.journalLayout .join{
+  background-color: #3c52ab;
+  color: #ffffff;
+  padding: 12px 20px;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+.journalLayout .join:hover{
+  background-color: #1c2e78;
+}
+
+/* content profile */
+.profilePic{
+  width: 300px;
+  height: 300px;
+  margin: 30px auto;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profilePic img{
+  object-fit: cover;
+}
+
+/* content posts */
+.posts{
+  text-align-last: left;
+}
+
+.postCard{
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.postCard p{
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.likeBtn{
+  background-color: #d3d3d3;
+  padding: 8px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+.likeBtn.liked{
+  background-color: rgb(255, 211, 211);
+  color: red;
+}
+
+
+.commentToggleBtn{
+  background-color: #0093f5;
+  color: white;
+  padding: 8px 16px;
+  font-size: 15px;
+  border-radius: 4px;
+  transition: 1s;
+  margin:20px 0px;
+}
+
+.commentToggleBtn:hover{
+  background-color: #0056b3;
+ 
+}
+.commentAddBtn{
+  background-color: #28a745;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 15px;
+  transition: 1s;
+}
+.commentAddBtn:hover{
+  background-color: #218838;
+}
+.commentList li{
+  background-color: #e7e7e7;
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+}
+.commentLikeBtn{
+  margin-left: 80%;
+  background-color: #28a745;
+  padding: 4px 8px;
+  border-radius: 4px;
+  color: white;
+}
+.editBtn{
+  color: #0093f5;
+  border: 1px solid #0093f5;
+  padding: 2px 5px;
+  font-size: 15px;
+  border-radius: 8px;
+  transition: 1s;
+  cursor: pointer;
+}
+.deleteBtn{
+  color: #e74c3c;
+  border: 1px solid #e74c3c;
+  padding: 2px 5px;
+  font-size: 15px;
+  border-radius: 8px;
+  margin-left: 10px;
+  transition: 1s;
+  cursor: pointer;
+
+}
+.reple{width: 93%; margin: auto; display: flex;}
+.reple input{flex: 3; margin-right: 10px;}
+.reple button{flex: 1;}
+/* footer */
+.footer{
+  height: 50px;
+  background-color: #666;
+  text-align: center;
+  line-height: 50px;
+  color: #dadada;
+}
